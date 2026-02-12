@@ -1,0 +1,84 @@
+@import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+    
+    /* ORARI Theme - Professional Government Portal */
+    --color-background: hsl(210 20% 98%);
+    --color-foreground: hsl(215 25% 17%);
+    
+    --color-card: hsl(0 0% 100%);
+    --color-card-foreground: hsl(215 25% 17%);
+    
+    --color-popover: hsl(0 0% 100%);
+    --color-popover-foreground: hsl(215 25% 17%);
+    
+    /* Primary - Deep Navy Blue */
+    --color-primary: hsl(215 70% 25%);
+    --color-primary-foreground: hsl(0 0% 100%);
+    
+    /* Secondary - Soft Blue Gray */
+    --color-secondary: hsl(210 20% 94%);
+    --color-secondary-foreground: hsl(215 25% 27%);
+    
+    /* Muted - Light Gray */
+    --color-muted: hsl(210 15% 95%);
+    --color-muted-foreground: hsl(215 15% 50%);
+    
+    /* Accent - Teal for Actions */
+    --color-accent: hsl(173 58% 39%);
+    --color-accent-foreground: hsl(0 0% 100%);
+    
+    /* Success - Green */
+    --color-success: hsl(152 60% 40%);
+    --color-success-foreground: hsl(0 0% 100%);
+    
+    /* Warning - Amber */
+    --color-warning: hsl(38 92% 50%);
+    --color-warning-foreground: hsl(0 0% 10%);
+    
+    /* Info - Light Blue */
+    --color-info: hsl(199 89% 48%);
+    --color-info-foreground: hsl(0 0% 100%);
+    
+    --color-destructive: hsl(0 72% 51%);
+    --color-destructive-foreground: hsl(0 0% 100%);
+    
+    --color-border: hsl(214 20% 88%);
+    --color-input: hsl(214 20% 88%);
+    --color-ring: hsl(215 70% 25%);
+    
+    --radius: 0.625rem;
+    
+    /* Sidebar - Darker Variant */
+    --color-sidebar-background: hsl(215 70% 20%);
+    --color-sidebar-foreground: hsl(210 20% 95%);
+    --color-sidebar-primary: hsl(173 58% 45%);
+    --color-sidebar-primary-foreground: hsl(0 0% 100%);
+    --color-sidebar-accent: hsl(215 60% 28%);
+    --color-sidebar-accent-foreground: hsl(210 20% 95%);
+    --color-sidebar-border: hsl(215 50% 30%);
+    --color-sidebar-ring: hsl(173 58% 45%);
+    --color-sidebar-muted: hsl(215 40% 35%);
+}
+
+@layer utilities {
+    .gradient-hero {
+        @apply bg-gradient-to-br from-primary via-primary/90 to-accent;
+    }
+    
+    .gradient-accent {
+        @apply bg-gradient-to-br from-accent to-accent/70;
+    }
+    
+    .gradient-primary {
+        @apply bg-gradient-to-br from-primary to-primary/85;
+    }
+}
